@@ -7,6 +7,7 @@ Rico Schmitt
 Lehndorffstrasse 24  
 10318 Berlin  
 Germany
+
 **Contact:**  
 E-mail: imprint@ricoschmitt.com  
 
@@ -20,6 +21,7 @@ Rico Schmitt
 Lehndorffstrasse 24  
 10318 Berlin  
 Deutschland
+
 **Kontakt:**  
 E-Mail: imprint@ricoschmitt.com
 

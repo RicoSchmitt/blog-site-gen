@@ -1,11 +1,10 @@
 ---
 title: "Cloudflare on K8S"
-author: "Rico"
-date: 2025-08-24
+date: 2025-08-22
 summary: "cloudflare"
-description: "Exploring the cloudflare philosophical underpinnings of artificial intelligence."
-tags: ["AI", "Kubernetes"]
-toc: true
+description: ""
+tags: ["Kubernetes", "Cloudflare"]
+toc: false
 ---
 
 this entry explains cloudflare on kubernetes

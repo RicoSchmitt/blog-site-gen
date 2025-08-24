@@ -1,11 +1,10 @@
 ---
 title: "Zen of AI"
-author: "Rico"
-date: 2025-08-24
-summary: "A short meditation on intelligence, artificial and otherwise."
+date: 2025-07-22
+summary: "Meditation on intelligence, artificial and otherwise."
 description: "Exploring the philosophical underpinnings of artificial intelligence."
 tags: ["AI", "philosophy"]
-toc: true
+toc: false
 ---
 
 
