@@ -1,0 +1,19 @@
+<footer class="mt-10 mb-6 text-center text-sm opacity-70">
+  <p>
+    © {{ now.Format "2006" }} {{ .Site.Title }} · Code based on 
+    <a href="https://github.com/tomfran/typo" 
+       class="underline hover:no-underline" 
+       target="_blank" 
+       rel="noopener noreferrer">Typo</a> 
+    and 
+    <a href="https://github.com/gohugoio/hugo" 
+       class="underline hover:no-underline" 
+       target="_blank" 
+       rel="noopener noreferrer">Hugo</a> ·
+    No Tracking ·
+    <a href="{{ "/imprint/" | relURL }}" class="underline hover:no-underline">Impressum</a>
+    {{- with site.Params.privacyURL -}}
+      · <a href="{{ . | relURL }}" class="underline hover:no-underline">Datenschutz</a>
+    {{- end -}}
+  </p>
+</footer>

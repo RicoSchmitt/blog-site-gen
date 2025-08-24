@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Rico Schmitt&#39;s Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Rico Schmitt&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare on K8S</title>
+      <link>http://localhost:1313/software_architecture/cloudflare-on-kubernetes/</link>
+      <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/software_architecture/cloudflare-on-kubernetes/</guid>
+      <description>cloudflare</description>
+    </item>
+    <item>
+      <title>Zen of AI</title>
+      <link>http://localhost:1313/essays/zen_of_ai/</link>
+      <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/essays/zen_of_ai/</guid>
+      <description>A short meditation on intelligence, artificial and otherwise.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;This blog reflects the personal thoughts, values, and considerations of the author, Rico Schmitt. The views and technical elaborations expressed here are solely those of the author and do not represent the opinions or positions of any current or past employers, organizations, or investments with which the author may be associated.&lt;/p&gt;&#xA;&lt;p&gt;Critical exchange and discussion are welcome. If you would like to share thoughts or discuss any blog entry on technical matters, please email &lt;a href=&#34;mailto:contact@ricoschmitt.com&#34;&gt;contact@ricoschmitt.com&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Legal Notice / Impressum</title>
+      <link>http://localhost:1313/imprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/imprint/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Responsible / Operator:&lt;/strong&gt;&lt;br&gt;&#xA;Rico Schmitt&lt;br&gt;&#xA;Lehndorffstrasse 24&lt;br&gt;&#xA;10318 Berlin&lt;br&gt;&#xA;Germany&#xA;&lt;strong&gt;Contact:&lt;/strong&gt;&lt;br&gt;&#xA;E-mail: &lt;a href=&#34;mailto:imprint@ricoschmitt.com&#34;&gt;imprint@ricoschmitt.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;&#xA;I operate this site as a private individual, not in a commercial capacity. The content is non-commercial.&#xA;No Tracking.&lt;/p&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;german&#34;&gt;&#xA;  German&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#german&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Verantwortlich / Betreiber:&lt;/strong&gt;&lt;br&gt;&#xA;Rico Schmitt&lt;br&gt;&#xA;Lehndorffstrasse 24&lt;br&gt;&#xA;10318 Berlin&lt;br&gt;&#xA;Deutschland&#xA;&lt;strong&gt;Kontakt:&lt;/strong&gt;&lt;br&gt;&#xA;E-Mail: &lt;a href=&#34;mailto:imprint@ricoschmitt.com&#34;&gt;imprint@ricoschmitt.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt;&lt;br&gt;&#xA;Ich betreibe diese Seite als private Person, nicht im Rahmen einer gewerblichen Tätigkeit. Der Inhalt ist nicht kommerziell.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,69 @@
+baseURL = 'https://blog.ricoschmitt.com'
+languageCode = 'en-us'
+title = """Rico Schmitt's Blog"""
+theme = 'typo'
+
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Meta description
+description = "Computer Science and Philosophy"
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+# homeIntroTitle = 'Welcome esteemed Reader'
+homeIntroContent = """Writings on cluster computing and essays on computer science and neurobiology"""
+
+[[params.menu]]
+name = "Essays"
+url = "/essays"
+
+[[params.menu]]
+name = "Software Architecture"
+url = "/software_architecture"
+
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+[params.breadcrumbs]
+enabled = true
+showCurrentPage = true
+home = "Home"
+
+[[params.social]]
+name = "Linktree"
+url = "https://linktree.ricoschmitt.com"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/RicoSchmitt"
+
+[[params.menu]]
+name = "about"
+url = "/about"
+
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
