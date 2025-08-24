@@ -3,9 +3,8 @@ languageCode = 'en-us'
 title = """Rico Schmitt's Blog"""
 theme = 'typo'
 
-
-[taxonomies]
-tag = 'tags'
+# [taxonomies]
+# tag = 'tags'
 
 [params]
 # Meta description
@@ -14,11 +13,17 @@ description = "Computer Science and Philosophy"
 # Appearance settings
 theme = 'auto'
 colorPalette = 'default'
-hideHeader = false
+hideHeader = true
 
 # Intro on main page, content is markdown
 # homeIntroTitle = 'Welcome esteemed Reader'
-homeIntroContent = """Writings on cluster computing and essays on computer science and neurobiology"""
+homeIntroContent = """Essays on computer science and neurobiology, writings on cluster computing"""
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '02 Jan 2006'
+
 
 [[params.menu]]
 name = "Essays"
@@ -28,11 +33,6 @@ url = "/essays"
 name = "Software Architecture"
 url = "/software_architecture"
 
-
-# Lists parameters
-paginationSize = 100
-listSummaries = true
-listDateFormat = '2 Jan 2006'
 
 # Breadcrumbs
 [params.breadcrumbs]
