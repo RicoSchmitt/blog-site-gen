@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.0.1...v1.0.2) (2025-08-29)
+
+
+### Bug Fixes
+
+* updated cloudflared blogpost ([6c7f9ce](https://github.com/RicoSchmitt/blog-site-gen/commit/6c7f9cef213b239bf626d52316bed0fee711c749))
+
 ## [1.0.1](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.0.0...v1.0.1) (2025-08-29)
 
 
