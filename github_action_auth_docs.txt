@@ -1,0 +1,50 @@
+# Authentication usage in GitHub Actions workflow
+
+1. GITHUB_TOKEN
+   - Provided automatically by GitHub for every workflow run.
+   - Used in:
+     - Semantic Release (line 39) → creates tags, releases, changelogs.
+     - Docker Login (line 67) → allows pushing images to GHCR.
+   - No manual setup required unless you need wider permissions, in which case
+     replace with a PAT (Personal Access Token) stored in repository secrets.
+
+2. github.actor
+   - GitHub username of the actor triggering the workflow.
+   - Used in Docker login (line 66).
+   - Provided automatically by GitHub, no manual setup needed.
+
+# Optional: PAT for advanced cases
+- If pushing to a private GHCR repo in a different organization or requiring
+  cross-repo semantic-release, replace `secrets.GITHUB_TOKEN` with a PAT:
+    username: <PAT_OWNER>
+    password: ${{ secrets.PAT_TOKEN }}
+- Store PAT in repository → Settings → Secrets and variables → Actions → New repository secret.
+
+
+# Step 1: Create PAT
+- Go to GitHub → Settings → Developer settings → Personal Access Tokens → Fine-grained or classic.
+- Generate a token with:
+  - write:packages
+  - read:packages
+  - (optional) delete:packages
+  - repo (if package belongs to a private repo)
+
+# Step 2: Store PAT in repository secrets
+- Repo → Settings → Secrets and variables → Actions → New repository secret
+- Name it: CR_PAT
+- Value: <paste your personal access token>
+
+# Step 3: Use PAT in workflow
+Replace Docker login step:
+
+- name: Login to GHCR
+  uses: docker/login-action@v3
+  with:
+    registry: ${{ env.REGISTRY }}
+    username: ${{ github.actor }}
+    password: ${{ secrets.CR_PAT }}
+
+# Step 4: Pulling private images
+Developers must authenticate with PAT to pull:
+  docker login ghcr.io -u USERNAME -p <PAT>
+  docker pull ghcr.io/<owner>/<repo>:<tag>
