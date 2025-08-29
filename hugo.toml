@@ -6,6 +6,10 @@ theme = 'typo'
 # [taxonomies]
 # tag = 'tags'
 
+[module]
+  vendor    = true
+  vendorDir = "_vendor"
+
 [params]
 # Meta description
 description = "Computer Science and Philosophy"
