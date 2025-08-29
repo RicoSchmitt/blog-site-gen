@@ -1,17 +1,17 @@
 # syntax=docker/dockerfile:1.7
 
-# Stage 1 — build with Hugo v0.148.2 (extended, multi-arch)
-FROM --platform=$BUILDPLATFORM hugomods/hugo:0.148.2 AS builder
-ARG HUGO_ENV=production
-ARG HUGO_BASEURL=""
+# Stage 1 — build with Hugo (extended)
+FROM hugomods/hugo:0.148.2 AS builder
 WORKDIR /src
 COPY . .
-RUN hugo --minify --gc \
-    ${HUGO_BASEURL:+--baseURL "${HUGO_BASEURL}"} \
-    -s . -d /out
+
+# If modules are vendored, Hugo will use ./vendor automatically.
+# Fail the build if no index.html is produced.
+RUN --mount=type=cache,target=/root/.cache/hugo \
+    hugo --minify --gc -s . -d /out && test -s /out/index.html
 
 # Stage 2 — serve with Nginx
-FROM --platform=$TARGETPLATFORM nginx:alpine
+FROM nginx:alpine
 COPY --from=builder /out /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

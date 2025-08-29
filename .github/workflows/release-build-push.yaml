@@ -24,7 +24,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # semantic-release needs full history
+          fetch-depth: 0
+          submodules: true
+      
+        # Ensure Hugo modules are resolved and vendored into ./vendor
+      - name: Hugo modules ensure & vendor
+        run: |
+          docker run --rm -v "$PWD:/src" -w /src hugomods/hugo:0.148.2 \
+            sh -lc 'hugo mod graph && hugo mod vendor && test -d vendor'
+
+       # Guardrail: fail fast if the site would be empty
+      - name: Hugo sanity check (fail on empty)
+        run: |
+          docker run --rm -v "$PWD:/src" -w /src hugomods/hugo:0.148.2 \
+            sh -lc 'hugo --minify --gc -s . -d /tmp/out --verbose && test -s /tmp/out/index.html'
+
 
       - name: Use Node.js
         uses: actions/setup-node@v4

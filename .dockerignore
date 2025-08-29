@@ -1,8 +1,8 @@
 .git
-.gitmodules
 .gitignore
+.github
+.hugo_build.lock
 node_modules
+public          # (this is local output; we don’t need it in CI)
 .DS_Store
-**/.hugo_build.lock
-**/.cache
-public
+*.log
