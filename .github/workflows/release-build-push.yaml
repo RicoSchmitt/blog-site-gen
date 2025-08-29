@@ -26,13 +26,34 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true
-      
-        # Ensure Hugo modules are resolved and vendored into ./vendor
-      - name: Hugo modules ensure & vendor
-        run: |
-          docker run --rm -v "$PWD:/src" -w /src hugomods/hugo:0.148.2 \
-            sh -lc 'hugo mod graph && hugo mod vendor && test -d vendor'
 
+
+
+
+      - name: Hugo modules init & vendor (safe Git)
+        env:
+          REPO: ${{ github.repository }}   # e.g. ricoschmitt/blog-site-gen
+        run: |
+          # Capture the host UID:GID so the container doesn't run as root
+          UID_GID="$(id -u):$(id -g)"
+          docker run --rm \
+            --user "$UID_GID" \
+            -e REPO \
+            -e GIT_TERMINAL_PROMPT=0 \
+            -v "$PWD:/src" -w /src \
+            hugomods/hugo:0.148.2 \
+            sh -lc '
+               # Mark the worktree as safe for Git (inside container)
+               git config --global --add safe.directory /src
+               # Initialize modules if needed
+               test -f go.mod || hugo mod init github.com/$REPO
+               # Resolve and vendor; tidy is idempotent even without go.sum
+               hugo mod tidy
+               hugo mod vendor
+               test -d vendor
+             '
+
+      
        # Guardrail: fail fast if the site would be empty
       - name: Hugo sanity check (fail on empty)
         run: |
