@@ -28,8 +28,9 @@ jobs:
 
       - name: Hugo sanity check (fail on empty)
         run: |
-          docker run --rm -v "$PWD:/src" -w /src hugomods/hugo:0.148.2 \
-            sh -lc 'hugo --minify --gc -s . -d /tmp/out --verbose && test -s /tmp/out/index.html'
+          docker run --rm -e HOME=/tmp -v "$PWD:/src" -w /src \
+            hugomods/hugo:0.148.2 \
+            sh -lc 'hugo --minify --gc -s . -d /tmp/out --printPathWarnings --printI18nWarnings && test -s /tmp/out/index.html'
       
 
       - name: Use Node.js
