@@ -38,6 +38,7 @@ jobs:
           UID_GID="$(id -u):$(id -g)"
           docker run --rm \
             --user "$UID_GID" \
+            -e HOME=/tmp \
             -e REPO \
             -e GIT_TERMINAL_PROMPT=0 \
             -v "$PWD:/src" -w /src \
@@ -52,14 +53,22 @@ jobs:
                hugo mod vendor
                test -d vendor
              '
-
-      
-       # Guardrail: fail fast if the site would be empty
       - name: Hugo sanity check (fail on empty)
         run: |
-          docker run --rm -v "$PWD:/src" -w /src hugomods/hugo:0.148.2 \
-            sh -lc 'hugo --minify --gc -s . -d /tmp/out --verbose && test -s /tmp/out/index.html'
+          UID_GID="$(id -u):$(id -g)"
+          docker run --rm \
+            --user "$UID_GID" \
+            -e HOME=/tmp \
+            -e GIT_TERMINAL_PROMPT=0 \
+            -v "$PWD:/src" -w /src \
+            hugomods/hugo:0.148.2 \
+            sh -lc '
+               git config --global --add safe.directory /src || true
+               hugo --minify --gc -s . -d /tmp/out --verbose
+               test -s /tmp/out/index.html
+            '
 
+      
 
       - name: Use Node.js
         uses: actions/setup-node@v4
