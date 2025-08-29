@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.0.2...v1.0.3) (2025-08-29)
+
+
+### Bug Fixes
+
+* **blog:** update cloudflare on kubernetes article with new details ([a0e3f22](https://github.com/RicoSchmitt/blog-site-gen/commit/a0e3f229dc667b7e6a9fbae5f980e7b8f12dae92))
+
 ## [1.0.2](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.0.1...v1.0.2) (2025-08-29)
 
 
