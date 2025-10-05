@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.0.3...v1.1.0) (2025-10-05)
+
+
+### Features
+
+* close port 22 blogpost added ([78810a7](https://github.com/RicoSchmitt/blog-site-gen/commit/78810a71c87e41ef2ef5aadc02d1a99be170aa65))
+
 ## [1.0.3](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.0.2...v1.0.3) (2025-08-29)
 
 
