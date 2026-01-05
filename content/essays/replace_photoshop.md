@@ -10,9 +10,9 @@ toc: false
 When Arch removed Python 2 from the repos, the chain of dependencies for my Wine prefix
 running Photoshop CS2 finally collapsed, so I could no longer edit memes on Visual Studio Code
 users. 
-I had to find another solution. This is when I discovered the strengths of vim for graphical
-editing. I want to explain to you the strengths of this approach and its methodology. Not only can
-you escape proprietary tools and formats but also edit your footage privately even while people
+I had to find another solution. This is when I discovered the superiority of vim over any other graphical
+editing tool. I want to explain to you the strengths of this approach and its methodology. Not only can
+you escape proprietary scamware and formats but also edit your footage privately even while people
 watch your screen.
 
 The ultimate advantage of using vim as a graphical editor is that you can edit your photos on any machine. It doesn't matter if you are on your local Proxmox instance that runs on your Raspberry Pi home server or you are on a micro OS Kubernetes control node. Your graphics editor is preinstalled. No other software offers such availability.
