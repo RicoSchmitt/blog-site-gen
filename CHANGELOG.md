@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.2.0...v1.2.1) (2026-01-05)
+
+
+### Bug Fixes
+
+* added linebreaks to vim photoshop post ([f5d5cd1](https://github.com/RicoSchmitt/blog-site-gen/commit/f5d5cd1aeae1a4a5888abfedd17ae40c0fd06be4))
+
 # [1.2.0](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.1.0...v1.2.0) (2026-01-05)
 
 
