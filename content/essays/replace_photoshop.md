@@ -7,7 +7,7 @@ tags: [ "satire"]
 toc: false
 ---
 
-When Arch removed Python 2 from the repos, the baroque chain of dependencies for my Wine prefix
+When Arch removed Python 2 from the repos, the chain of dependencies for my Wine prefix
 running Photoshop CS2 finally collapsed, so I could no longer edit memes on Visual Studio Code
 users. 
 I had to find another solution. This is when I discovered the strengths of vim for graphical
