@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.1.0...v1.2.0) (2026-01-05)
+
+
+### Features
+
+* vim replacement of photshop blogpost added ([67cbea8](https://github.com/RicoSchmitt/blog-site-gen/commit/67cbea86278d72511070972725f1527446d603c7))
+
 # [1.1.0](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.0.3...v1.1.0) (2025-10-05)
 
 
