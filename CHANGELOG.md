@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.2.3...v1.2.4) (2026-01-05)
+
+
+### Bug Fixes
+
+* edited photoshop blogpost ([9e0bee7](https://github.com/RicoSchmitt/blog-site-gen/commit/9e0bee7feef10dfde42fca617ebafe1cc06b1ba0))
+
 ## [1.2.3](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.2.2...v1.2.3) (2026-01-05)
 
 
