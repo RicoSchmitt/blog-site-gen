@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.2.2...v1.2.3) (2026-01-05)
+
+
+### Bug Fixes
+
+* changed wording in photshop post ([5172333](https://github.com/RicoSchmitt/blog-site-gen/commit/51723334e1e828e798b7db35cc157cbf8c3838d7))
+
 ## [1.2.2](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.2.1...v1.2.2) (2026-01-05)
 
 
