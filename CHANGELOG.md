@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.2.1...v1.2.2) (2026-01-05)
+
+
+### Bug Fixes
+
+* fixed grammar in replace photoshop ([3310766](https://github.com/RicoSchmitt/blog-site-gen/commit/3310766f875bc29ab16fba1ee653a5966f97326c))
+
 ## [1.2.1](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.2.0...v1.2.1) (2026-01-05)
 
 
