@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.2.4...v1.2.5) (2026-01-06)
+
+
+### Bug Fixes
+
+* fixed title typo in satirical photoshop blogpost ([b8ccbfe](https://github.com/RicoSchmitt/blog-site-gen/commit/b8ccbfe57438d137a404e313ce6f177f3e748483))
+
 ## [1.2.4](https://github.com/RicoSchmitt/blog-site-gen/compare/v1.2.3...v1.2.4) (2026-01-05)
 
 
